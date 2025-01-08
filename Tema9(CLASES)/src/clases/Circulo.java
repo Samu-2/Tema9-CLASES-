@@ -1,7 +1,15 @@
 package clases;
 
 public class Circulo {
-	public double radio; // propiedad radio
+private double radio; // propiedad radio
+
+	public double getRadio() {
+		return radio;
+	}
+
+	public void setRadio(double radio) {
+		this.radio = radio;
+	}
 
 	public Circulo() {
 
