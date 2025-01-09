@@ -12,6 +12,7 @@ public class Ej29 {
 		String nombre = "";
 		String telefono = "";
 		int edad = 0;
+		/*
 		do {
 			edad = util.Funciones.dimeEntero("Introduce tu edad ", sc);
 
@@ -21,15 +22,15 @@ public class Ej29 {
 			System.out.println("Introduce tu email");
 			email = sc.nextLine();
 		} while (!((validarEmail(email) == true) && nombre.length() > 0 && edad > 0));
-		
-		Particular2 persona1 = new Particular2(nombre,email,edad);
+		*/
+		Particular2 persona1 = new Particular2("pepe","myexample@ewev.com",23);
 		
 		int opcion=0;
 		do {
-		opcion=	util.Funciones.dimeEntero("Introduce una opcion\n 1.Añadir telefono\n 2.Salir", sc);
+		opcion=	util.Funciones.dimeEntero("Introduce una opcion\n 1.AÃ±adir telefono\n 2.Salir", sc);
 					switch (opcion) {
 					case 1:
-						while (telefono.length()>0);
+						
 							System.out.println("Introduce un numero de telefono");
 							telefono =sc.nextLine();
 								persona1.addTelefono(telefono);
@@ -45,11 +46,14 @@ public class Ej29 {
 			
 		} while (opcion!=2);
 		
-		
+		util.Funciones.muestraListaString(persona1.getListaTelefonos());
+		System.out.println(persona1);
 
 }
 
-          private static boolean validarEmail(String email) {
+ 
+
+		private static boolean validarEmail(String email) {
 		String arroba = "@";
 		String punto = ".";
 		for (int i = 0; i < email.length() - 1; i++) {

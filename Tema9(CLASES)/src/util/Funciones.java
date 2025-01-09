@@ -103,5 +103,10 @@ public class Funciones {
 		System.out.println();
 	}
 
-	
+	public static void muestraListaString(List<String> lista) {
+		for (int i = 0; i < lista.size(); i++) {
+			System.out.print(i == 0 ? lista.get(i) : ", " + lista.get(i));
+		}
+		System.out.println();
+	}
 }

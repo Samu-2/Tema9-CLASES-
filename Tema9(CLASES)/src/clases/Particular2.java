@@ -10,6 +10,18 @@ public class Particular2 {
 	private List<String> listaTelefonos;
 	
 	
+	public List<String> getListaTelefonos() {
+		return listaTelefonos;
+	}
+
+
+
+	public void setListaTelefonos(List<String> listaTelefonos) {
+		this.listaTelefonos = listaTelefonos;
+	}
+
+
+
 	public Particular2(String nombre, String email, int edad) {
 		super();
 		this.nombre = nombre;
@@ -52,6 +64,14 @@ public class Particular2 {
 
 		return 1000.0 / edad;
 
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Particular2 [nombre=" + nombre + ", email=" + email + ", edad=" + edad + ", listaTelefonos="
+				+ listaTelefonos + "]";
 	}
 
 }
