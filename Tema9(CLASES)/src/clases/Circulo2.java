@@ -11,6 +11,11 @@ public class Circulo2 {
 		this.radio = radio;
 	}
 		
+	/*public Circulo2(double radio) {
+		super();
+		this.radio = radio;
+	}*/
+
 	public Circulo2(){
 		
 	}
