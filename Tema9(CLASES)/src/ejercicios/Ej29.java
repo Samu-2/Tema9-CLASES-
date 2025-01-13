@@ -12,7 +12,7 @@ public class Ej29 {
 		String nombre = "";
 		String telefono = "";
 		int edad = 0;
-		/*
+		//"pepe","myexample@ewev.com",23
 		do {
 			edad = util.Funciones.dimeEntero("Introduce tu edad ", sc);
 
@@ -22,8 +22,8 @@ public class Ej29 {
 			System.out.println("Introduce tu email");
 			email = sc.nextLine();
 		} while (!((validarEmail(email) == true) && nombre.length() > 0 && edad > 0));
-		*/
-		Particular2 persona1 = new Particular2("pepe","myexample@ewev.com",23);
+		
+		Particular2 persona1 = new Particular2(nombre,email,edad);
 		
 		int opcion=0;
 		do {
