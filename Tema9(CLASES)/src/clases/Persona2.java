@@ -1,19 +1,18 @@
 package clases;
 
 public class Persona2 {
-private String DNI;
+	private String DNI;
 	private String nombre;
 	private String apellidos;
 	private int telefono;
-	
-	
+
 	public Persona2() {
 		super();
 	}
 
 	public Persona2(String dNI, String nombre, String apellidos, int telefono) {
 		super();
-		DNI = dNI;
+		this.DNI = dNI;
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.telefono = telefono;
@@ -56,5 +55,5 @@ private String DNI;
 		return "Persona2 [DNI=" + DNI + ", nombre=" + nombre + ", apellidos=" + apellidos + ", telefono=" + telefono
 				+ "]";
 	}
-	
+
 }

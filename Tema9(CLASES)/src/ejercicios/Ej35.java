@@ -1,9 +1,11 @@
 package ejercicios;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import clases.Pedido;
 import clases.Persona2;
 import clases.Producto;
 
@@ -22,7 +24,11 @@ public class Ej35 {
 		
 	}
 
+	Persona2 person1= new Persona2("3445632", "PEPE", "Gutierrez", 277);
+LocalDate hoy=	LocalDate.now();
+	Pedido pedido1 = new Pedido(hoy, lista, 5, person1);
 	
+	System.out.println(person1.getNombre()+" tiene que pagar " + pedido1.precioPedido()+ " euros");
 	}
 
 }

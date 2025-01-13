@@ -60,7 +60,7 @@ public class Pedido {
 		for (Producto producto : listaProdcucto) {
 			valor+=producto.getPrecio();
 		}
-		return valor;
+		return valor+gastosEnvio;
 	}
 	@Override
 	public String toString() {
