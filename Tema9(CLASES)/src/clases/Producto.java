@@ -1,5 +1,7 @@
 package clases;
 
+import java.util.List;
+
 public class Producto {
 	private int codigo;
 	private String nombre;
@@ -45,6 +47,10 @@ public class Producto {
 
 	public void setPrecio(double precio) {
 		this.precio = precio;
+	}
+	public void addProducto(Producto codigo,List<Producto>lista) {
+		
+		lista.add(codigo);
 	}
 
 }

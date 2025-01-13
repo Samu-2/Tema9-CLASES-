@@ -5,6 +5,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Scanner;
 
+import clases.CatalogoProducto;
+import clases.Producto;
+
 public class Funciones {
 	//indica si el String que recibe como parametro es entero
 	public static boolean esInt(String s)
@@ -104,6 +107,12 @@ public class Funciones {
 	}
 
 	public static void muestraListaString(List<String> lista) {
+		for (int i = 0; i < lista.size(); i++) {
+			System.out.print(i == 0 ? lista.get(i) : ", " + lista.get(i));
+		}
+		System.out.println();
+	}
+	public static void muestraListaCatalogo(List<Producto> lista) {
 		for (int i = 0; i < lista.size(); i++) {
 			System.out.print(i == 0 ? lista.get(i) : ", " + lista.get(i));
 		}

@@ -8,7 +8,7 @@ public class Pedido {
 //propiedades
 	private LocalDate fecha;
 	private List<Producto> listaProdcucto;
-	private int gastosEnvio;
+	private double gastosEnvio;
 	private Persona2 persona;
 	
 	
@@ -18,7 +18,7 @@ public class Pedido {
 		super();
 		listaProdcucto = new ArrayList<Producto>();
 	}
-	public Pedido(LocalDate fecha, List<Producto> listaProdcucto, int gastosEnvio, Persona2 persona) {
+	public Pedido(LocalDate fecha, List<Producto> listaProdcucto, double gastosEnvio, Persona2 persona) {
 		super();
 		this.fecha = fecha;
 		this.listaProdcucto = listaProdcucto;
@@ -42,7 +42,7 @@ public class Pedido {
 	public void setListaProdcucto(List<Producto> listaProdcucto) {
 		this.listaProdcucto = listaProdcucto;
 	}
-	public int getGastosEnvio() {
+	public double getGastosEnvio() {
 		return gastosEnvio;
 	}
 	public void setGastosEnvio(int gastosEnvio) {
@@ -66,6 +66,10 @@ public class Pedido {
 	public String toString() {
 		return "pedido [fecha=" + fecha + ", listaProdcucto=" + listaProdcucto + ", gastosEnvio=" + gastosEnvio
 				+ ", persona=" + persona + "]";
+	}
+	public void addProducto(int numProducto) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 
