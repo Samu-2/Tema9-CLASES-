@@ -1,12 +1,14 @@
 package util;
 
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Scanner;
 
-import clases.CatalogoProducto;
+
 import clases.Producto;
+import clases.Tienda;
 
 public class Funciones {
 	//indica si el String que recibe como parametro es entero
@@ -112,10 +114,14 @@ public class Funciones {
 		}
 		System.out.println();
 	}
-	public static void muestraListaCatalogo(List<Producto> lista) {
+	public static void muestraListaTienda(List<Tienda> lista) {
 		for (int i = 0; i < lista.size(); i++) {
 			System.out.print(i == 0 ? lista.get(i) : ", " + lista.get(i));
 		}
 		System.out.println();
+	}
+	
+	public static double redondear2deci(double num) {
+		return Math.round(num*100)/100;
 	}
 }
