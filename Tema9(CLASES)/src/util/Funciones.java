@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Scanner;
 
-
+import clases.Empleado;
 import clases.Producto;
 import clases.Tienda;
 
@@ -114,9 +114,9 @@ public class Funciones {
 		}
 		System.out.println();
 	}
-	public static void muestraListaTienda(List<Tienda> lista) {
-		for (int i = 0; i < lista.size(); i++) {
-			System.out.print(i == 0 ? lista.get(i) : ", " + lista.get(i));
+	public static void muestraListaTienda(List<Empleado> list) {
+		for (int i = 0; i < list.size(); i++) {
+			System.out.print(i == 0 ? list.get(i) : ", " + list.get(i));
 		}
 		System.out.println();
 	}
@@ -124,4 +124,26 @@ public class Funciones {
 	public static double redondear2deci(double num) {
 		return Math.round(num*100)/100;
 	}
-}
+
+	public static void muestraListaTienda1(List<Tienda> listaTiendas) {
+		for (int i = 0; i < listaTiendas.size(); i++) {
+			System.out.print(i == 0 ? listaTiendas.get(i) : ", " + listaTiendas.get(i));
+		}
+		System.out.println();
+		
+	}
+	public static void muestraListaProducto(List<Producto> list) {
+		for (int i = 0; i < list.size(); i++) {
+			System.out.print(i == 0 ? list.get(i) : ", " + list.get(i));
+		}
+		System.out.println();
+	}
+
+	public static void muestraListaEmpleado(List<Empleado> list) {
+		for (int i = 0; i < list.size(); i++) {
+			System.out.print(i == 0 ? list.get(i) : ", " + list.get(i));
+		}
+		System.out.println();
+	}
+		
+	}

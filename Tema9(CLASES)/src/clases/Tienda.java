@@ -18,6 +18,11 @@ public class Tienda {
 		this.listaEmpleados = listaEmpleados;
 	}
 
+	public Tienda(String string, String string2) {
+	this.nombre=string;
+	this.direccion = string2;
+	}
+
 	public String getNombre() {
 		return nombre;
 	}
@@ -45,6 +50,7 @@ public class Tienda {
 	public void addEmpleado(Empleado empleado) {
 		listaEmpleados.add(empleado);
 	}
+	
 
 	public double pagoMensual() {
 		double pagoMensual = 0;

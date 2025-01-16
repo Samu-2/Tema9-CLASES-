@@ -1,6 +1,6 @@
 package clases;
 
-
+import java.util.List;
 
 public class Producto {
 	private int codigo;

@@ -67,10 +67,7 @@ public class Pedido {
 		return "pedido [fecha=" + fecha + ", listaProdcucto=" + listaProdcucto + ", gastosEnvio=" + gastosEnvio
 				+ ", persona=" + persona + "]";
 	}
-	public void addProducto(int numProducto) {
-		// TODO Auto-generated method stub
-		
-	}
+
 	
 
 }
